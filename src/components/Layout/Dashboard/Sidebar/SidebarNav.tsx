@@ -43,62 +43,37 @@ export default async function SidebarNav() {
       <SidebarNavTitle>{dict.sidebar.items.theme}</SidebarNavTitle>
       <SidebarNavItem icon={faDroplet} href="#">{dict.sidebar.items.colors}</SidebarNavItem>
       <SidebarNavItem icon={faPencil} href="#">{dict.sidebar.items.typography}</SidebarNavItem>
-      <SidebarNavTitle>{dict.sidebar.items.components}</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.base}>
-        <SidebarNavItem href="#">{dict.sidebar.items.accordion}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.breadcrumb}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.cards}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.carousel}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.collapse}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.list_group}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.navs}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.pagination}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.popovers}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.progress}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.scrollspy}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.spinners}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.tables}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.tabs}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.tooltips}</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.updates}>
+          <SidebarNavItem href="#">{dict.sidebar.items.updates_news}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.updates_gameupdates}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faLocationArrow} toggleText={dict.sidebar.items.buttons}>
-        <SidebarNavItem href="#">{dict.sidebar.items.buttons}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.buttons_group}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.dropdowns}</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.servers}>
+          <SidebarNavItem href="#">{dict.sidebar.items.servers_featured}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.servers_mostpopular}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.servers_newest}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.servers_oldest}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavItem icon={faChartPie} href="#">{dict.sidebar.items.charts}</SidebarNavItem>
-
-      <SidebarNavGroup toggleIcon={faFileLines} toggleText={dict.sidebar.items.forms}>
-        <SidebarNavItem href="#">{dict.sidebar.items.form_control}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.select}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.checks_and_radios}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.range}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.input_group}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.floating_labels}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.layout}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.validation}</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.status}>
+          <SidebarNavItem href="#">{dict.sidebar.items.status_activity}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faStar} toggleText={dict.sidebar.items.icons}>
-        <SidebarNavItem href="#">{dict.sidebar.items.core_ui_icons}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.core_ui_icons_brand}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.core_ui_icons_flag}</SidebarNavItem>
+      <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
+
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_dashboard}>
+          <SidebarNavItem href="#">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.admin_reports}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faBell} toggleText={dict.sidebar.items.notifications}>
-        <SidebarNavItem href="#">{dict.sidebar.items.alerts}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.badge}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.modals}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.toasts}</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_servers}>
+          <SidebarNavItem href="#">{dict.sidebar.items.admin_maps}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.admin_mods}</SidebarNavItem>
+          <SidebarNavItem href="#">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
       </SidebarNavGroup>
-
-      <SidebarNavItem icon={faCalculator} href="#">
-        {dict.sidebar.items.widgets}
-        <small className="ms-auto"><Badge bg="info">NEW</Badge></small>
-      </SidebarNavItem>
 
       <SidebarNavTitle>{dict.sidebar.items.extras}</SidebarNavTitle>
 
@@ -108,9 +83,6 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faBug} href="#">{dict.sidebar.items.error404}</SidebarNavItem>
         <SidebarNavItem icon={faBug} href="#">{dict.sidebar.items.error500}</SidebarNavItem>
       </SidebarNavGroup>
-
-      <SidebarNavItem icon={faFileLines} href="#">{dict.sidebar.items.docs}</SidebarNavItem>
-      <SidebarNavItem icon={faLayerGroup} href="https://coreui.io/pro/">{dict.sidebar.items.try_core_ui_pro}</SidebarNavItem>
     </ul>
   )
 }
