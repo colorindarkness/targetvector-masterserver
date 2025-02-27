@@ -1,16 +1,17 @@
 import {
-  faAddressCard, faBell, faFileLines, faStar,
+  // faAddressCard, faBell, faFileLines, faStar,
+  faAddressCard, faStar,
 } from '@fortawesome/free-regular-svg-icons'
 import {
   faBug,
-  faCalculator,
-  faChartPie,
+  // faCalculator,
+  // faChartPie,
   faCode,
-  faDroplet,
+  // faDroplet,
   faGauge,
-  faLayerGroup,
-  faLocationArrow,
-  faPencil,
+  // faLayerGroup,
+  // faLocationArrow,
+  // faPencil,
   faPuzzlePiece,
   faRightToBracket,
 } from '@fortawesome/free-solid-svg-icons'
