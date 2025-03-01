@@ -1,5 +1,5 @@
 import { ServerRegion } from '@/models/serverregion'
-import {DateTime} from 'next-auth/providers/kakao'
+import { DateTime } from 'next-auth/providers/kakao'
 
 export interface Server {
   id: number;

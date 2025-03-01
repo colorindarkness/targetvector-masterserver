@@ -1,4 +1,4 @@
-import {DateTime} from 'next-auth/providers/kakao'
+import { DateTime } from 'next-auth/providers/kakao'
 
 export interface Mod {
   id: number;
