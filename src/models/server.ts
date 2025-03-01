@@ -1,8 +1,7 @@
-import { Type } from '@/models/type'
 import { ServerRegion } from '@/models/serverregion'
 import {DateTime} from 'next-auth/providers/kakao'
 
-export interface Servers {
+export interface Server {
   id: number;
   identifier: string;
   name: string;
@@ -15,16 +14,17 @@ export interface Servers {
   modded: boolean;
   total_players: number;
   current_players: number;
-  uptime: number;
+  initialized_datetime: DateTime;
   latency: number;
   time: DateTime;
   weather: string;
   mods: string[];
-  special_defense: number;
-  speed: number;
+  dayscale: number;
+  nightscale: number;
   total: number;
   description: string;
   motd: string;
   admin: string;
   moderators: string[];
+  params: string[];
 }
