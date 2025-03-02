@@ -43,8 +43,8 @@ export default async function SidebarNav() {
       </SidebarNavItem>
 
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.updates}>
-        <SidebarNavItem href="#">{dict.sidebar.items.updates_news}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.updates_gameupdates}</SidebarNavItem>
+        <SidebarNavItem href="/news">{dict.sidebar.items.updates_news}</SidebarNavItem>
+        <SidebarNavItem href="/gameupdates">{dict.sidebar.items.updates_gameupdates}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.servers}>
