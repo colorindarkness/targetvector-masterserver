@@ -1,31 +1,29 @@
 import { DateTime } from 'next-auth/providers/kakao'
 
-export interface Dlc {
+export interface Update {
   id: number;
   uuid: string;
-  identifier: string;
-  name: string;
-  official: boolean;
-  beta: boolean;
-  version: string;
-  server_version: number;
-  client_version: number;
-  modes: string[];
-  required_dlc: string[];
-  required_mods: string[];
-  max_players: number;
+  title: string;
   type: string;
+  official: boolean;
   author: string;
+  version: string;
+  client_version: number;
+  beta: boolean;
   content_rating: number;
+  thumbnail_url: string;
   img_url: string;
-  description: string;
+  shorttext: string;
+  longtext: string;
   description_url: string;
+  download_url: string;
   bugs_url: string;
   note: string;
-  publish_datetime: DateTime;
-  update_datetime: DateTime;
+  uri: string;
+  params: string;
+  created_datetime: DateTime;
+  updated_datetime: DateTime;
   deleted_datetime: DateTime;
   deleted_by: string;
   deleted_reason: number;
-  params: string[];
 }
