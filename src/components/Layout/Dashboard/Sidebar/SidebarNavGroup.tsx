@@ -10,7 +10,7 @@ import {
 import classNames from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { useRouter } from "next/navigation"
+// import { useRouter } from "next/navigation"
 
 type SidebarNavGroupToggleProps = {
   eventKey: string;

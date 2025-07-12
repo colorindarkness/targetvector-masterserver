@@ -67,14 +67,14 @@ export default async function SidebarNav() {
         <SidebarNavItem href="#">{dict.sidebar.items.host_reports}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavTitle>{dict.sidebar.items.developer}</SidebarNavTitle>
+      <SidebarNavTitle>{dict.sidebar.items.dev}</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.developer_dashboard}>
-        <SidebarNavItem href="#">{dict.sidebar.items.developer_dashboard}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.developer_events}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.developer_maps}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.developer_mods}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.developer_reports}</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.dev_dashboard}>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_events}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_maps}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_mods}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_reports}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
