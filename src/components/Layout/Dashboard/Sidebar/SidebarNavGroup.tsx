@@ -46,7 +46,7 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
       <Button
         variant="link"
         type="button"
-        className={classNames('rounded-0 align-items-center shadow-none dropdown-toggle', {
+        className={classNames('rounded-0 align-items-center shadow-none', {
           collapsed: !isCurrentEventKey,
         })}
         onClick={decoratedOnClick}
