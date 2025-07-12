@@ -1,15 +1,54 @@
+## Target Vector Master Server Dashboard
+
+A scalable Master Server Backend for Multiplayer Games
+
+## Features
+
+* Authentication
+* View, sort and filter Servers, Events, Maps and Mods.
+* Save favorite Servers, Events, Maps and Mods (Signed-in users only).
+* User Profiles with Social Media profile linking.
+* Verify Hosts and Developers by linking Steam and Epic Games profiles.
+* Direct Messages for Admins to message Developers/Content Creators and Hosts.
+* Push Notifications.
+* Dark and Light Mode.
+* Localization.
+
+
+### For Developers/Content Creators
+
+* Submit and Manage Events, Maps and Mods.
+* Manage Issues, Reports and Sanctions for Events, Maps and Mods.
+* View Anonymous Usage Statistics.
+
+### For Server Hosts
+
+* Manage Servers, Users and Groups.
+* Monitor Server Performance.
+* Manage Reports and Sanctions for Users and Groups.
+* View Anonymous Usage Statistics.
+
+### For Game Administrators
+
+* Monitor Cloud Services, Servers,
+* Add and Manage Events, Maps and Mods.
+* Manage Users and Groups.
+* Manage Reports and Sanctions for Users and Groups.
+* Manage Issues, Reports ans Sanctions for Events, Maps and Mods.
+* View Anonymous Usage Statistics.
+
+## Technologies
+
+* Next.JS
+* Typescript
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* App Router
+* ORM provided by Drizzle
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app --typescript`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Next.JS Dashboard
-
-A Next.JS boilerplate with the famous Open Source Boostrap Admin Template, [CoreUI](https://coreui.io/).
-
-This dashboard is built with `Typescript` and [React Bootstrap](https://react-bootstrap.github.io/), using the App Router.
-
-
-Powered by Drizzle
-
 ![Powered by Vercel](https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg)
+
 
 ## Screenshot
 
