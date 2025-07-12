@@ -7,6 +7,7 @@ export interface User {
   name: string;
   usernames: string;
   type: number;
+  developer: number;
   status: number;
   website_url: string;
   twitch_url: string;
