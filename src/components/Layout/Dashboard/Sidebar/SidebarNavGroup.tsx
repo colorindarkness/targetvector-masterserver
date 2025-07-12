@@ -35,9 +35,9 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
   }, [activeEventKey, eventKey, setIsShow])
 
   return (
-    <span className="rounded-0 px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none">
+    <span className="rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none">
       <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
-      <a href={link} className="no-underline nav-link">
+      <a href={link} className="text-decoration-none">
         {children}
       </a>
       <Button
