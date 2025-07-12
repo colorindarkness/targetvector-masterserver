@@ -71,7 +71,7 @@ export default async function SidebarNav() {
         <SidebarNavItem href="#">{dict.sidebar.items.dev_events}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_maps}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_mods}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.dev_reports}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_issues}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
@@ -79,6 +79,7 @@ export default async function SidebarNav() {
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_dashboard}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.admin_issues}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_reports}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
