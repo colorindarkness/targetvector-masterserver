@@ -67,6 +67,7 @@ export default function SidebarNavGroup(props: SidebarNavGroupProps) {
 
   return (
     <Accordion as="li" bsPrefix="nav-group" className={classNames({ show: isShow })}>
+      {toggleText}
       <SidebarNavGroupToggle icon={toggleIcon} eventKey="0" setIsShow={setIsShow}>{toggleText}</SidebarNavGroupToggle>
       <Accordion.Collapse eventKey="0">
         <ul className="nav-group-items list-unstyled">
