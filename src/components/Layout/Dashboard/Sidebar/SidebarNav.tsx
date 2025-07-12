@@ -59,17 +59,14 @@ export default async function SidebarNav() {
         <SidebarNavItem href="#">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavTitle>{dict.sidebar.items.host}</SidebarNavTitle>
-
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.host_dashboard}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.host}>
         <SidebarNavItem href="#">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_servers}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_reports}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.host_sanctions}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavTitle>{dict.sidebar.items.dev}</SidebarNavTitle>
-
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.dev_dashboard}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.dev}>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_events}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_maps}</SidebarNavItem>
