@@ -15,6 +15,7 @@ import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 type SidebarNavGroupToggleProps = {
   eventKey: string;
   icon: IconDefinition;
+  link: string;
   setIsShow: (isShow: boolean) => void;
 } & PropsWithChildren
 
@@ -22,7 +23,7 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
   // https://react-bootstrap.github.io/components/accordion/#custom-toggle-with-expansion-awareness
   const { activeEventKey } = useContext(AccordionContext)
   const {
-    eventKey, icon, children, setIsShow,
+    eventKey, icon, link, children, setIsShow,
   } = props
 
   const decoratedOnClick = useAccordionButton(eventKey)
@@ -34,13 +35,15 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
   }, [activeEventKey, eventKey, setIsShow])
 
   return (
-    <span className="rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none">
+    <span className="rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-auto shadow-none">
       <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
-      {children}
+      <a href={link}>
+        {children}
+      </a>
       <Button
         variant="link"
         type="button"
-        className={classNames('rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-auto shadow-none', {
+        className={classNames('rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none', {
           collapsed: !isCurrentEventKey,
         })}
         onClick={decoratedOnClick}
@@ -56,12 +59,14 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
 type SidebarNavGroupProps = {
   toggleIcon: IconDefinition;
   toggleText: string;
+  toggleLink: string;
 } & PropsWithChildren
 
 export default function SidebarNavGroup(props: SidebarNavGroupProps) {
   const {
     toggleIcon,
     toggleText,
+    toggleLink,
     children,
   } = props
 
@@ -69,7 +74,7 @@ export default function SidebarNavGroup(props: SidebarNavGroupProps) {
 
   return (
     <Accordion as="li" bsPrefix="nav-group" className={classNames({ show: isShow })}>
-      <SidebarNavGroupToggle icon={toggleIcon} eventKey="0" setIsShow={setIsShow}>{toggleText}</SidebarNavGroupToggle>
+      <SidebarNavGroupToggle icon={toggleIcon} link={toggleLink} eventKey="0" setIsShow={setIsShow}>{toggleText}</SidebarNavGroupToggle>
       <Accordion.Collapse eventKey="0">
         <ul className="nav-group-items list-unstyled">
           {children}
