@@ -1,5 +1,5 @@
 export default function ServersAdminPage() {
   return (
-    'Hello world!'
+    'Admin Servers'
   )
 }

@@ -61,6 +61,7 @@ export default async function SidebarNav() {
 
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.host}>
         <SidebarNavItem href="#">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.host_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_servers}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_reports}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_sanctions}</SidebarNavItem>
@@ -68,26 +69,31 @@ export default async function SidebarNav() {
 
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.dev}>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_events}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_maps}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_mods}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_issues}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.dev_reports}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_dashboard}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_devops}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.admin_servers}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_issues}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_reports}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_servers}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_content}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_maps}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_mods}</SidebarNavItem>
-        <SidebarNavItem href="#">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.admin_content_issues}</SidebarNavItem>
+        <SidebarNavItem href="#">{dict.sidebar.items.admin_content_reports}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavTitle>{dict.sidebar.items.extras}</SidebarNavTitle>

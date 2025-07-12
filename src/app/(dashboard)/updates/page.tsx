@@ -1,5 +1,5 @@
 export default function UpdatesPage() {
   return (
-    'Hello world!'
+    'All Updates'
   )
 }
