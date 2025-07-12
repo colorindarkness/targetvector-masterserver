@@ -42,24 +42,24 @@ export default async function SidebarNav() {
         <small className="ms-auto"><Badge bg="danger" className="ms-auto">DEMO</Badge></small>
       </SidebarNavItem>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.updates}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.updates}>
         <SidebarNavItem href="/updates/news">{dict.sidebar.items.updates_news}</SidebarNavItem>
         <SidebarNavItem href="/updates/gameupdates">{dict.sidebar.items.updates_gameupdates}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.servers}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.servers}>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_featured}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_mostpopular}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_newest}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_oldest}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.status}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.status}>
         <SidebarNavItem href="#">{dict.sidebar.items.status_activity}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.host}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.host}>
         <SidebarNavItem href="#">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_servers}</SidebarNavItem>
@@ -67,7 +67,7 @@ export default async function SidebarNav() {
         <SidebarNavItem href="#">{dict.sidebar.items.host_sanctions}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.dev}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.dev}>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.dev_events}</SidebarNavItem>
@@ -79,7 +79,7 @@ export default async function SidebarNav() {
 
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_devops}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_devops}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
@@ -89,7 +89,7 @@ export default async function SidebarNav() {
         <SidebarNavItem href="#">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleText={dict.sidebar.items.admin_content}>
+      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_content}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_maps}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_mods}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_content_issues}</SidebarNavItem>
@@ -98,7 +98,7 @@ export default async function SidebarNav() {
 
       <SidebarNavTitle>{dict.sidebar.items.extras}</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faStar} toggleText={dict.sidebar.items.pages}>
+      <SidebarNavGroup toggleIcon={faStar} toggleLink="/updates/" toggleText={dict.sidebar.items.pages}>
         <SidebarNavItem icon={faRightToBracket} href="login">{dict.sidebar.items.login}</SidebarNavItem>
         <SidebarNavItem icon={faAddressCard} href="register">{dict.sidebar.items.register}</SidebarNavItem>
         <SidebarNavItem icon={faBug} href="#">{dict.sidebar.items.error404}</SidebarNavItem>
