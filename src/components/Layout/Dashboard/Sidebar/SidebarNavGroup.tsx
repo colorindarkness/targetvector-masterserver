@@ -34,19 +34,17 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
   }, [activeEventKey, eventKey, setIsShow])
 
   return (
-    <span>
+    <span className="rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none">
       <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
       {children}
       <Button
         variant="link"
         type="button"
-        className={classNames('rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none', {
+        className={classNames('rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-auto shadow-none', {
           collapsed: !isCurrentEventKey,
         })}
         onClick={decoratedOnClick}
       >
-        <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
-        {children}
         <div className="nav-chevron ms-auto text-end">
           <FontAwesomeIcon size="xs" icon={faChevronUp} />
         </div>
@@ -71,7 +69,6 @@ export default function SidebarNavGroup(props: SidebarNavGroupProps) {
 
   return (
     <Accordion as="li" bsPrefix="nav-group" className={classNames({ show: isShow })}>
-      {toggleText}
       <SidebarNavGroupToggle icon={toggleIcon} eventKey="0" setIsShow={setIsShow}>{toggleText}</SidebarNavGroupToggle>
       <Accordion.Collapse eventKey="0">
         <ul className="nav-group-items list-unstyled">
