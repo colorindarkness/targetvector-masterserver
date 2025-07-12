@@ -1,4 +1,4 @@
-import { Col, Row } from 'react-bootstrap'
+import { Col, Row, Accordion } from 'react-bootstrap'
 import Link from 'next/link'
 import LoginForm from '@/app/(authentication)/login/login'
 import { SearchParams } from '@/types/next'
@@ -23,15 +23,33 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
           <Col md={7} className="bg-white dark:bg-dark border p-5">
             <div>
               <h1>{dict.login.title}</h1>
-              <div className="text-center">
-                <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
-                <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                  {dict.signup.register_now}
-                </Link>
-                <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                  {dict.signup.register_now}
-                </Link>
-              </div>
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Verified Registration</Accordion.Header>
+                  <Accordion.Body>
+                    <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                      {dict.signup.register_now}
+                    </Link>
+                    <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                      {dict.signup.register_now}
+                    </Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Email Signup</Accordion.Header>
+                  <Accordion.Body>
+                    <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
+
+                    <LoginForm callbackUrl={getCallbackUrl()} />
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                {dict.signup.register_now}
+              </Link>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                {dict.signup.register_now}
+              </Link>
               <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
 
               <LoginForm callbackUrl={getCallbackUrl()} />
