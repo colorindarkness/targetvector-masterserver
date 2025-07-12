@@ -34,20 +34,24 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
   }, [activeEventKey, eventKey, setIsShow])
 
   return (
-    <Button
-      variant="link"
-      type="button"
-      className={classNames('rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none', {
-        collapsed: !isCurrentEventKey,
-      })}
-      onClick={decoratedOnClick}
-    >
+    <span>
       <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
       {children}
-      <div className="nav-chevron ms-auto text-end">
-        <FontAwesomeIcon size="xs" icon={faChevronUp} />
-      </div>
-    </Button>
+      <Button
+        variant="link"
+        type="button"
+        className={classNames('rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none', {
+          collapsed: !isCurrentEventKey,
+        })}
+        onClick={decoratedOnClick}
+      >
+        <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
+        {children}
+        <div className="nav-chevron ms-auto text-end">
+          <FontAwesomeIcon size="xs" icon={faChevronUp} />
+        </div>
+      </Button>
+    </span>
   )
 }
 
