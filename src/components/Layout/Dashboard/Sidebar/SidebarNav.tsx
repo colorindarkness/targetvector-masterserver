@@ -3,6 +3,12 @@ import {
   faAddressCard, faStar,
 } from '@fortawesome/free-regular-svg-icons'
 import {
+  faNewspaper,
+  faServer,
+  faPlug,
+  faHouseChimney,
+  faCircleNodes,
+  faCubes,
   faBug,
   // faCalculator,
   // faChartPie,
@@ -42,24 +48,24 @@ export default async function SidebarNav() {
         <small className="ms-auto"><Badge bg="danger" className="ms-auto">DEMO</Badge></small>
       </SidebarNavItem>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.updates}>
-        <SidebarNavItem href="/updates/news">{dict.sidebar.items.updates_news}</SidebarNavItem>
-        <SidebarNavItem href="/updates/gameupdates">{dict.sidebar.items.updates_gameupdates}</SidebarNavItem>
+      <SidebarNavGroup toggleIcon={faNewspaper} toggleLink="/updates/" toggleText={dict.sidebar.items.updates}>
+        <SidebarNavItem icon={faNewspaper} href="/updates/news">{dict.sidebar.items.updates_news}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/updates/gameupdates">{dict.sidebar.items.updates_gameupdates}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.servers}>
+      <SidebarNavGroup toggleIcon={faServer} toggleLink="/updates/" toggleText={dict.sidebar.items.servers}>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_featured}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_mostpopular}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_newest}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.servers_oldest}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.status}>
+      <SidebarNavGroup toggleIcon={faPlug} toggleLink="/updates/" toggleText={dict.sidebar.items.status}>
         <SidebarNavItem href="#">{dict.sidebar.items.status_activity}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.host}>
+      <SidebarNavGroup toggleIcon={faHouseChimney} toggleLink="/updates/" toggleText={dict.sidebar.items.host}>
         <SidebarNavItem href="#">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.host_servers}</SidebarNavItem>
@@ -79,7 +85,7 @@ export default async function SidebarNav() {
 
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_devops}>
+      <SidebarNavGroup toggleIcon={faCircleNodes} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_devops}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
@@ -89,7 +95,7 @@ export default async function SidebarNav() {
         <SidebarNavItem href="#">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
 
-      <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_content}>
+      <SidebarNavGroup toggleIcon={faCubes} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_content}>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_maps}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_mods}</SidebarNavItem>
         <SidebarNavItem href="#">{dict.sidebar.items.admin_content_issues}</SidebarNavItem>
