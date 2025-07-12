@@ -5,11 +5,12 @@ import React, {
   PropsWithChildren, useContext, useEffect, useState,
 } from 'react'
 import {
-  Accordion, AccordionContext, Button, useAccordionButton,
+  Accordion, AccordionContext, Button, useAccordionButton, NavLink,
 } from 'react-bootstrap'
 import classNames from 'classnames'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 // import { useRouter } from "next/navigation"
 
 type SidebarNavGroupToggleProps = {
@@ -37,13 +38,15 @@ const SidebarNavGroupToggle = (props: SidebarNavGroupToggleProps) => {
   return (
     <span className="rounded-0 nav-link px-3 py-2 d-flex align-items-center flex-fill w-100 shadow-none">
       <FontAwesomeIcon className="nav-icon ms-n3" icon={icon} />
-      <a href={link} className="text-decoration-none">
-        {children}
-      </a>
+      <Link href={link} passHref legacyBehavior>
+        <NavLink className="px-3 py-2 d-flex align-items-center">
+          {children}
+        </NavLink>
+      </Link>
       <Button
         variant="link"
         type="button"
-        className={classNames('rounded-0 nav-link align-items-right accordion-button shadow-none', {
+        className={classNames('rounded-0 align-items-center shadow-none dropdown-toggle', {
           collapsed: !isCurrentEventKey,
         })}
         onClick={decoratedOnClick}
