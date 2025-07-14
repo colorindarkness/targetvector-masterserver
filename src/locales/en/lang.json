@@ -3,7 +3,7 @@
     "title": "Sign In",
     "steam": "Sign in with Steam",
     "epic": "Sign in with Epic Games",
-    "description": "Sign in to your account",
+    "description": "Sign in with Email",
     "form": {
       "username": "Username",
       "password": "Password",
@@ -27,7 +27,7 @@
     "steam": "Sign up with Steam",
     "epic": "Sign up with Epic Games",
     "description": "Create your account",
-    "register_now": "Sign up Now!",
+    "register_now": "Sign up with Email",
     "form": {
       "username": "Username",
       "email": "Email",

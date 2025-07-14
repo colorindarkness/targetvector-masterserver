@@ -29,7 +29,6 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
                 {dict.login.epic}
               </Link>
-              Signup with Email
               <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
               <LoginForm callbackUrl={getCallbackUrl()} />
             </div>
