@@ -1,15 +1,17 @@
 {
   "login": {
-    "title": "Login",
+    "title": "Sign In",
+    "steam": "Sign in with Steam",
+    "epic": "Sign in with Epic Games",
     "description": "Sign in to your account",
     "form": {
       "username": "Username",
       "password": "Password",
-      "submit": "Login"
+      "submit": "Sign In"
     },
     "forgot_password": "Forgot password?",
     "signup": {
-      "title": "Sign up",
+      "title": "Sign Up",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua."
     },
     "message": {
@@ -21,9 +23,11 @@
     "rows_per_page": "Rows per page"
   },
   "signup": {
-    "title": "Register",
+    "title": "Sign Up",
+    "steam": "Sign up with Steam",
+    "epic": "Sign up with Epic Games",
     "description": "Create your account",
-    "register_now": "Register Now!",
+    "register_now": "Sign up Now!",
     "form": {
       "username": "Username",
       "email": "Email",

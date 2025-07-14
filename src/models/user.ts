@@ -19,8 +19,6 @@ export interface User {
   socialmedia01_url: string;
   socialmedia02_url: string;
   socialmedia03_url: string;
-  reports: number[];
-  sanctions: number[];
   note: string;
   created_datetime: DateTime;
   updated_datetime: DateTime;

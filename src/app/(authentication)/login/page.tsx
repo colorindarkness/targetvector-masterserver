@@ -1,4 +1,4 @@
-import { Accordion, Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Link from 'next/link'
 import LoginForm from '@/app/(authentication)/login/login'
 import { SearchParams } from '@/types/next'
@@ -23,28 +23,15 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
           <Col md={7} className="bg-white dark:bg-dark border p-5">
             <div>
               <h1>{dict.login.title}</h1>
-              <Accordion defaultActiveKey="0">
-                Verified Registration
-                <Accordion.Collapse eventKey="0">
-                  <div>
-                    <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                      {dict.signup.register_now}
-                    </Link>
-                    <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                      {dict.signup.register_now}
-                    </Link>
-                  </div>
-                </Accordion.Collapse>
-              </Accordion>
-              <Accordion defaultActiveKey="0">
-                Email Signup
-                <Accordion.Collapse eventKey="0">
-                  <div>
-                    <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
-                    <LoginForm callbackUrl={getCallbackUrl()} />
-                  </div>
-                </Accordion.Collapse>
-              </Accordion>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                {dict.login.steam}
+              </Link>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                {dict.login.epic}
+              </Link>
+              Signup with Email
+              <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
+              <LoginForm callbackUrl={getCallbackUrl()} />
             </div>
           </Col>
           <Col
@@ -55,10 +42,10 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
               <h2>{dict.login.signup.title}</h2>
               <p>{dict.login.signup.description}</p>
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                {dict.signup.register_now}
+                {dict.signup.steam}
               </Link>
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                {dict.signup.register_now}
+                {dict.signup.epic}
               </Link>
               <Link className="btn btn-lg btn-light mt-3" href="/register">
                 {dict.signup.register_now}
