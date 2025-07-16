@@ -1,5 +1,5 @@
-export default function UpdatesPage() {
+export default function StatusPage() {
   return (
-    'All Updates'
+    'Status'
   )
 }
