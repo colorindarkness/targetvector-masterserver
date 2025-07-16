@@ -1,5 +1,5 @@
 export default function AdminDashboardPage() {
   return (
-    'Hello world!'
+    'Admin Dashboard'
   )
 }

@@ -54,52 +54,52 @@ export default async function SidebarNav() {
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faServer} toggleLink="/servers/" toggleText={dict.sidebar.items.servers}>
-        <SidebarNavItem href="/servers/featured/">{dict.sidebar.items.servers_featured}</SidebarNavItem>
-        <SidebarNavItem href="/servers/popular/">{dict.sidebar.items.servers_mostpopular}</SidebarNavItem>
-        <SidebarNavItem href="/servers/newest/">{dict.sidebar.items.servers_newest}</SidebarNavItem>
-        <SidebarNavItem href="/servers/oldest/">{dict.sidebar.items.servers_oldest}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/servers/featured/">{dict.sidebar.items.servers_featured}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/servers/popular/">{dict.sidebar.items.servers_mostpopular}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/servers/newest/">{dict.sidebar.items.servers_newest}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/servers/oldest/">{dict.sidebar.items.servers_oldest}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faPlug} toggleLink="/status/" toggleText={dict.sidebar.items.status}>
-        <SidebarNavItem href="/status/activity/">{dict.sidebar.items.status_activity}</SidebarNavItem>
-        <SidebarNavItem href="/status/statistics/">{dict.sidebar.items.status_statistics}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/status/activity/">{dict.sidebar.items.status_activity}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/status/statistics/">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faHouseChimney} toggleLink="/host/" toggleText={dict.sidebar.items.host}>
-        <SidebarNavItem href="/host/">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
-        <SidebarNavItem href="/host/analytics/">{dict.sidebar.items.host_analytics}</SidebarNavItem>
-        <SidebarNavItem href="/host/servers/">{dict.sidebar.items.host_servers}</SidebarNavItem>
-        <SidebarNavItem href="/host/reports/">{dict.sidebar.items.host_reports}</SidebarNavItem>
-        <SidebarNavItem href="/host/sanctions/">{dict.sidebar.items.host_sanctions}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/host/">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/host/analytics/">{dict.sidebar.items.host_analytics}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/host/servers/">{dict.sidebar.items.host_servers}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/host/reports/">{dict.sidebar.items.host_reports}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/host/sanctions/">{dict.sidebar.items.host_sanctions}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/dev/" toggleText={dict.sidebar.items.dev}>
-        <SidebarNavItem href="/dev/">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
-        <SidebarNavItem href="/dev/analytics">{dict.sidebar.items.dev_analytics}</SidebarNavItem>
-        <SidebarNavItem href="/dev/events}">{dict.sidebar.items.dev_events}</SidebarNavItem>
-        <SidebarNavItem href="/dev/maps">{dict.sidebar.items.dev_maps}</SidebarNavItem>
-        <SidebarNavItem href="/dev/mods">{dict.sidebar.items.dev_mods}</SidebarNavItem>
-        <SidebarNavItem href="/dev/issues">{dict.sidebar.items.dev_issues}</SidebarNavItem>
-        <SidebarNavItem href="/dev/reports">{dict.sidebar.items.dev_reports}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/analytics">{dict.sidebar.items.dev_analytics}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/events}">{dict.sidebar.items.dev_events}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/maps">{dict.sidebar.items.dev_maps}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/mods">{dict.sidebar.items.dev_mods}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/issues">{dict.sidebar.items.dev_issues}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/dev/reports">{dict.sidebar.items.dev_reports}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
 
       <SidebarNavGroup toggleIcon={faCircleNodes} toggleLink="/admin/" toggleText={dict.sidebar.items.admin_devops}>
-        <SidebarNavItem href="/admin/">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
-        <SidebarNavItem href="/admin/analytics/">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
-        <SidebarNavItem href="/admin/cloud/">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
-        <SidebarNavItem href="/admin/servers/">{dict.sidebar.items.admin_servers}</SidebarNavItem>
-        <SidebarNavItem href="/admin/issues/">{dict.sidebar.items.admin_issues}</SidebarNavItem>
-        <SidebarNavItem href="/admin/reports/">{dict.sidebar.items.admin_reports}</SidebarNavItem>
-        <SidebarNavItem href="/admin/gameservices/">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/analytics/">{dict.sidebar.items.admin_analytics}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/cloud/">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/servers/">{dict.sidebar.items.admin_servers}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/issues/">{dict.sidebar.items.admin_issues}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/reports/">{dict.sidebar.items.admin_reports}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/gameservices/">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavGroup toggleIcon={faCubes} toggleLink="/updates/" toggleText={dict.sidebar.items.admin_content}>
-        <SidebarNavItem href="/admin/maps/">{dict.sidebar.items.admin_maps}</SidebarNavItem>
-        <SidebarNavItem href="/admin/mods/">{dict.sidebar.items.admin_mods}</SidebarNavItem>
-        <SidebarNavItem href="/admin/content_issues/">{dict.sidebar.items.admin_content_issues}</SidebarNavItem>
-        <SidebarNavItem href="/admin/content_reports/">{dict.sidebar.items.admin_content_reports}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/maps/">{dict.sidebar.items.admin_maps}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/mods/">{dict.sidebar.items.admin_mods}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/content_issues/">{dict.sidebar.items.admin_content_issues}</SidebarNavItem>
+        <SidebarNavItem icon={faNewspaper} href="/admin/content_reports/">{dict.sidebar.items.admin_content_reports}</SidebarNavItem>
       </SidebarNavGroup>
 
       <SidebarNavTitle>{dict.sidebar.items.extras}</SidebarNavTitle>

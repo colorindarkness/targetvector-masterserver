@@ -1,5 +1,5 @@
 export default function GameUpdatesPage() {
   return (
-    'Game  Updates'
+    'Game Updates'
   )
 }

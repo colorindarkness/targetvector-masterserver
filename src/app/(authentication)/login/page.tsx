@@ -3,6 +3,10 @@ import Link from 'next/link'
 import LoginForm from '@/app/(authentication)/login/login'
 import { SearchParams } from '@/types/next'
 import { getDictionary } from '@/locales/dictionary'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSteamSymbol } from '@fortawesome/free-brands-svg-icons'
+import { faDragon } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 export default async function Page({ searchParams }: { searchParams: SearchParams }) {
   const { callbackUrl } = searchParams
@@ -24,12 +28,15 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
             <div>
               <h1>{dict.login.title}</h1>
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faSteamSymbol} />
                 {dict.login.steam}
               </Link>
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faDragon} />
                 {dict.login.epic}
               </Link>
               <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
+              <FontAwesomeIcon icon={faDragon} />
               <LoginForm callbackUrl={getCallbackUrl()} />
             </div>
           </Col>
@@ -41,12 +48,15 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
               <h2>{dict.login.signup.title}</h2>
               <p>{dict.login.signup.description}</p>
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faSteamSymbol} />
                 {dict.signup.steam}
               </Link>
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faDragon} />
                 {dict.signup.epic}
               </Link>
               <Link className="btn btn-lg btn-light mt-3" href="/register">
+                <FontAwesomeIcon icon={faEnvelope} />
                 {dict.signup.register_now}
               </Link>
             </div>
