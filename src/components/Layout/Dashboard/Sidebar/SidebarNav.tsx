@@ -32,6 +32,14 @@ import { Badge } from 'react-bootstrap'
 import SidebarNavGroup from '@/components/Layout/Dashboard/Sidebar/SidebarNavGroup'
 import SidebarNavItem from '@/components/Layout/Dashboard/Sidebar/SidebarNavItem'
 import { getDictionary } from '@/locales/dictionary'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/app/api/auth/option'
+
+export default async function Page() {
+  const session = await getServerSession(authOptions)
+  if (!session) return <div>Not signed in</div>
+  return <div>Welcome, {session.user?.name}</div>
+}
 
 const SidebarNavTitle = (props: PropsWithChildren) => {
   const { children } = props
@@ -43,6 +51,7 @@ const SidebarNavTitle = (props: PropsWithChildren) => {
 
 export default async function SidebarNav() {
   const dict = await getDictionary()
+  const session = await getServerSession(authOptions)
   return (
     <ul className="list-unstyled">
       <SidebarNavItem icon={faGauge} href="/">
@@ -81,6 +90,7 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faNewspaper} href="/status/stats/">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
+      {session && session.user?.id === 1 && (
       <SidebarNavGroup toggleIcon={faHouseChimney} toggleLink="/host/" toggleText={dict.sidebar.items.host}>
         <SidebarNavItem icon={faNewspaper} href="/host/">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/host/servers/">{dict.sidebar.items.host_servers}</SidebarNavItem>
@@ -90,6 +100,7 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faNewspaper} href="/host/reports/">{dict.sidebar.items.host_reports}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/host/sanctions/">{dict.sidebar.items.host_sanctions}</SidebarNavItem>
       </SidebarNavGroup>
+      )}
 
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/dev/" toggleText={dict.sidebar.items.dev}>
         <SidebarNavItem icon={faNewspaper} href="/dev/">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>

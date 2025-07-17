@@ -1,5 +1,36 @@
 ## Target Vector Master Server Dashboard
 
+<p align="center">
+    <a href="https://github.com/colorindarkness/targetvector-masterserver/commits/master">
+    <img src="https://vercelbadge.vercel.app/api/colorindarkness/targetvector-masterserver?plastic"
+         alt="Build Status">
+    </a>
+    <a href="https://github.com/colorindarkness/targetvector-masterserver/commits/master">
+    <img src="https://img.shields.io/github/last-commit/colorindarkness/targetvector-masterserver.svg?style=flat-square&logo=github&logoColor=white"
+         alt="GitHub last commit">
+    </a>
+    <a href="https://github.com/colorindarkness/targetvector-masterserver/issues">
+    <img src="https://img.shields.io/github/issues-raw/colorindarkness/targetvector-masterserver.svg?style=flat-square&logo=github&logoColor=white"
+         alt="GitHub issues">
+    </a>
+    <a href="https://github.com/colorindarkness/targetvector-masterserver/pulls">
+    <img src="https://img.shields.io/github/issues-pr-raw/colorindarkness/targetvector-masterserver.svg?style=flat-square&logo=github&logoColor=white"
+         alt="GitHub pull requests">
+    </a>
+    <a href="https://github.com/colorindarkness/targetvector-masterserver/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg"
+         alt="MIT License">
+    </a>
+    <a href="https://github.com/sponsors/colorindarkness">
+    <img src="https://img.shields.io/github/sponsors/colorindarkness.svg?style=flat-square&logo=github&logoColor=white"
+         alt="Become a Sponsor">
+    </a>
+    <a href="https://www.patreon.com/colorindarkness">
+    <img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dcolorindarkness%26type%3Dpatrons&style=flat"
+         alt="Become a Patron">
+    </a>
+</p>
+
 A scalable Master Server Backend for Multiplayer Games
 
 ## Features
@@ -10,8 +41,8 @@ A scalable Master Server Backend for Multiplayer Games
 * User Profiles with Social Media profile linking.
 * Verify Hosts and Developers by linking Steam and Epic Games profiles.
 * Direct Messages for Admins to message Developers/Content Creators and Hosts.
-* Push Notifications.
-* Dark and Light Mode.
+* Web Push Notifications.
+* Themes (Dark and Light Mode).
 * Localization.
 
 
