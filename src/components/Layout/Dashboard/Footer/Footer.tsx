@@ -6,10 +6,10 @@ export default function Footer() {
     <footer className="footer border-top px-sm-2 py-2">
       <Container fluid className="text-center align-items-center flex-column flex-md-row d-flex justify-content-between">
         <div>
-          &nbsp;
+          TargetVector Master Server
         </div>
         <div className="ms-md-auto">
-          &nbsp;
+          MIT, VOIDWARE Prohibited
         </div>
       </Container>
     </footer>
