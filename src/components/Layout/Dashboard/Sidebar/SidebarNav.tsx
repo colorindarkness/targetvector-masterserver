@@ -1,3 +1,5 @@
+"use client";
+
 import {
   // faAddressCard, faBell, faFileLines, faStar,
   faAddressCard, faStar,
