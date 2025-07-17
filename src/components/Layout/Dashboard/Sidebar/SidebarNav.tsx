@@ -35,12 +35,6 @@ import { getDictionary } from '@/locales/dictionary'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/app/api/auth/option'
 
-export default async function Page() {
-  const session = await getServerSession(authOptions)
-  if (!session) return <div>Not signed in</div>
-  return <div>Welcome, {session.user?.name}</div>
-}
-
 const SidebarNavTitle = (props: PropsWithChildren) => {
   const { children } = props
 
