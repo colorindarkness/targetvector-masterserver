@@ -84,7 +84,7 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faNewspaper} href="/status/stats/">{dict.sidebar.items.status_statistics}</SidebarNavItem>
       </SidebarNavGroup>
 
-      {session && session.user?.id === 1 && (
+      {session && session.user?.host === 1 && (
       <SidebarNavGroup toggleIcon={faHouseChimney} toggleLink="/host/" toggleText={dict.sidebar.items.host}>
         <SidebarNavItem icon={faNewspaper} href="/host/">{dict.sidebar.items.host_dashboard}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/host/servers/">{dict.sidebar.items.host_servers}</SidebarNavItem>
@@ -96,6 +96,7 @@ export default async function SidebarNav() {
       </SidebarNavGroup>
       )}
 
+      {session && session.user?.dev === 1 && (
       <SidebarNavGroup toggleIcon={faPuzzlePiece} toggleLink="/dev/" toggleText={dict.sidebar.items.dev}>
         <SidebarNavItem icon={faNewspaper} href="/dev/">{dict.sidebar.items.dev_dashboard}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/dev/events">{dict.sidebar.items.dev_events}</SidebarNavItem>
@@ -106,9 +107,13 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faNewspaper} href="/dev/issues">{dict.sidebar.items.dev_issues}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/dev/reports">{dict.sidebar.items.dev_reports}</SidebarNavItem>
       </SidebarNavGroup>
+      )}
 
+      {session && session.user?.admin === 1 && (
       <SidebarNavTitle>{dict.sidebar.items.admin}</SidebarNavTitle>
+      )}
 
+      {session && session.user?.admin === 1 && (
       <SidebarNavGroup toggleIcon={faCircleNodes} toggleLink="/admin/" toggleText={dict.sidebar.items.admin_devops}>
         <SidebarNavItem icon={faNewspaper} href="/admin/devops/">{dict.sidebar.items.admin_dashboard}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/admin/devops/cloud/">{dict.sidebar.items.admin_cloud}</SidebarNavItem>
@@ -120,7 +125,9 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faNewspaper} href="/admin/devops/reports/">{dict.sidebar.items.admin_reports}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/admin/devops/gameservices/">{dict.sidebar.items.admin_gameservices}</SidebarNavItem>
       </SidebarNavGroup>
+      )}
 
+      {session && session.user?.admin === 1 && (
       <SidebarNavGroup toggleIcon={faCubes} toggleLink="/admin/content/" toggleText={dict.sidebar.items.admin_content}>
         <SidebarNavItem icon={faNewspaper} href="/admin/content/maps/">{dict.sidebar.items.admin_maps}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/admin/content/mods/">{dict.sidebar.items.admin_mods}</SidebarNavItem>
@@ -128,6 +135,7 @@ export default async function SidebarNav() {
         <SidebarNavItem icon={faNewspaper} href="/admin/content/issues/">{dict.sidebar.items.admin_content_issues}</SidebarNavItem>
         <SidebarNavItem icon={faNewspaper} href="/admin/content/reports/">{dict.sidebar.items.admin_content_reports}</SidebarNavItem>
       </SidebarNavGroup>
+      )}
 
       <SidebarNavTitle>{dict.sidebar.items.extras}</SidebarNavTitle>
 
