@@ -42,7 +42,7 @@ export const authOptions: NextAuthOptions = {
           username: 'Username',
           email: 'user@email.com',
           avatar: '/assets/img/avatars/8.jpg',
-          host: 0,
+          host: 1,
           dev: 1,
           admin: 1,
         }
