@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { getServerSession } from 'next-auth/next'
+import { authOptions } from '@/app/api/auth/option'
 import { Container } from 'react-bootstrap'
 import HeaderSidebarToggler from '@/components/Layout/Dashboard/Header/HeaderSidebarToggler'
 import HeaderFeaturedNav from '@/components/Layout/Dashboard/Header/HeaderFeaturedNav'
@@ -6,10 +8,18 @@ import HeaderNotificationNav from '@/components/Layout/Dashboard/Header/HeaderNo
 import HeaderProfileNav from '@/components/Layout/Dashboard/Header/HeaderProfileNav'
 import Breadcrumb from '@/components/Layout/Dashboard/Breadcrumb/Breadcrumb'
 
-export default function Header() {
+export default async function Header() {
+  const session = await getServerSession(authOptions)
   return (
     <header className="header sticky-top mb-4 py-2 px-sm-2 border-bottom">
       <Container fluid className="header-navbar d-flex align-items-center px-0">
+        {session && (
+          <a href="/api/auth/signout">Sign out by link</a>
+        )}
+
+        {!session && (
+          <p>Not signed in</p>
+        )}
         <HeaderSidebarToggler />
         <Link href="/" className="header-brand d-md-none">
           <svg width="80" height="46">
