@@ -22,9 +22,9 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
 
   return (
     <Row className="justify-content-center align-items-center px-3">
-      <Col lg={8}>
+      <Col lg={5}>
         <Row>
-          <Col md={7} className="bg-white dark:bg-dark border p-5">
+          <Col md={3} className="bg-white dark:bg-dark border p-5">
             <div>
               <h1>{dict.login.title}</h1>
               <Row>
@@ -60,7 +60,7 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
             </div>
           </Col>
           <Col
-            md={5}
+            md={2}
             className="bg-primary text-white d-flex align-items-center justify-content-center p-5"
           >
             <div className="text-center">
