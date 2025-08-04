@@ -24,7 +24,7 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
     <Row className="justify-content-center align-items-center px-3">
       <Col lg={20}>
         <Row>
-          <Col md={10} className="bg-white dark:bg-dark border p-5">
+          <Col md={9} className="bg-white dark:bg-dark border p-5">
             <div>
               <h1>{dict.login.title}</h1>
               <Row>
