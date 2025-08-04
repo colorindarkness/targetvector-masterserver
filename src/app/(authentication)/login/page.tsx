@@ -27,24 +27,35 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
           <Col md={7} className="bg-white dark:bg-dark border p-5">
             <div>
               <h1>{dict.login.title}</h1>
-              <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                <FontAwesomeIcon icon={faSteamSymbol} />
-                {dict.login.steam}
-              </Link>
-              <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                <FontAwesomeIcon icon={faDragon} />
-                {dict.login.epic}
-              </Link>
-              <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                <FontAwesomeIcon icon={faSteamSymbol} />
-                {dict.login.discord}
-              </Link>
-              <Link className="btn btn-lg btn-dark mt-3" href="/register">
-                <FontAwesomeIcon icon={faDragon} />
-                {dict.login.twitter}
-              </Link>
+              <Row>
+                <Col className="text-center">
+                  <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                    <FontAwesomeIcon icon={faSteamSymbol} />
+                    {dict.login.steam}
+                  </Link>
+                </Col>
+                <Col className="text-center">
+                  <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                    <FontAwesomeIcon icon={faDragon} />
+                    {dict.login.epic}
+                  </Link>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="text-center">
+                  <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                    <FontAwesomeIcon icon={faSteamSymbol} />
+                    {dict.login.discord}
+                  </Link>
+                </Col>
+                <Col className="text-center">
+                  <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                    <FontAwesomeIcon icon={faDragon} />
+                    {dict.login.twitter}
+                  </Link>
+                </Col>
+              </Row>
               <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
-              <FontAwesomeIcon icon={faDragon} />
               <LoginForm callbackUrl={getCallbackUrl()} />
             </div>
           </Col>

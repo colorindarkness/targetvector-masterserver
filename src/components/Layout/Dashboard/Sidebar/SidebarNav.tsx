@@ -64,7 +64,6 @@ export default async function SidebarNav() {
 
       <SidebarNavItem icon={faAward} href="/events">
         {dict.sidebar.items.dev_events}
-        <small className="ms-auto"><Badge bg="info" className="ms-auto">NEW</Badge></small>
       </SidebarNavItem>
 
       <SidebarNavGroup toggleIcon={faServer} toggleLink="/servers/" toggleText={dict.sidebar.items.servers}>
@@ -81,7 +80,6 @@ export default async function SidebarNav() {
 
       <SidebarNavItem icon={faAward} href="/achievements">
         {dict.sidebar.items.achievements}
-        <small className="ms-auto"><Badge bg="info" className="ms-auto">NEW</Badge></small>
       </SidebarNavItem>
 
       <SidebarNavGroup toggleIcon={faPlug} toggleLink="/status/" toggleText={dict.sidebar.items.status}>
