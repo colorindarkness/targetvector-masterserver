@@ -3,6 +3,8 @@
     "title": "サインイン",
     "steam": "Sign in with Steam",
     "epic": "Sign in with Epic Games",
+    "discord": "Sign in with Discord",
+    "twitter": "Sign in with X",
     "description": "アカウントにログイン",
     "form": {
       "username": "ユーザー名",
@@ -26,6 +28,8 @@
     "title": "サインアップ",
     "steam": "Sign up with Steam",
     "epic": "Sign up with Epic Games",
+    "discord": "Sign up with Discord",
+    "twitter": "Sign up with X",
     "description": "アカウントを作成",
     "register_now": "今すぐ登録！",
     "form": {

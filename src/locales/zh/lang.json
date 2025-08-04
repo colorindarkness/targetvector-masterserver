@@ -3,6 +3,8 @@
     "title": "登录",
     "steam": "Sign in with Steam",
     "epic": "Sign in with Epic Games",
+    "discord": "Sign in with Discord",
+    "twitter": "Sign in with X",
     "description": "登录到你的账户",
     "form": {
       "username": "用户名",
@@ -26,6 +28,8 @@
     "title": "注册页",
     "steam": "Sign up with Steam",
     "epic": "Sign up with Epic Games",
+    "discord": "Sign up with Discord",
+    "twitter": "Sign up with X",
     "description": "创建你的账户",
     "register_now": "立刻注册!",
     "form": {

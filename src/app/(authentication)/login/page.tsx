@@ -35,6 +35,14 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
                 <FontAwesomeIcon icon={faDragon} />
                 {dict.login.epic}
               </Link>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faSteamSymbol} />
+                {dict.login.discord}
+              </Link>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faDragon} />
+                {dict.login.twitter}
+              </Link>
               <p className="text-black-50 dark:text-gray-500">{dict.login.description}</p>
               <FontAwesomeIcon icon={faDragon} />
               <LoginForm callbackUrl={getCallbackUrl()} />
@@ -54,6 +62,14 @@ export default async function Page({ searchParams }: { searchParams: SearchParam
               <Link className="btn btn-lg btn-dark mt-3" href="/register">
                 <FontAwesomeIcon icon={faDragon} />
                 {dict.signup.epic}
+              </Link>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faSteamSymbol} />
+                {dict.signup.discord}
+              </Link>
+              <Link className="btn btn-lg btn-dark mt-3" href="/register">
+                <FontAwesomeIcon icon={faDragon} />
+                {dict.signup.twitter}
               </Link>
               <Link className="btn btn-lg btn-light mt-3" href="/register">
                 <FontAwesomeIcon icon={faEnvelope} />

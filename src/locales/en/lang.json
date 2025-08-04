@@ -3,6 +3,8 @@
     "title": "Sign In",
     "steam": "Sign in with Steam",
     "epic": "Sign in with Epic Games",
+    "discord": "Sign in with Discord",
+    "twitter": "Sign in with X",
     "description": "Sign in with Email",
     "form": {
       "username": "Username",
@@ -26,6 +28,8 @@
     "title": "Sign Up",
     "steam": "Sign up with Steam",
     "epic": "Sign up with Epic Games",
+    "discord": "Sign up with Discord",
+    "twitter": "Sign up with X",
     "description": "Create your account",
     "register_now": "Sign up with Email",
     "form": {
